@@ -1,0 +1,14 @@
+<h1>Score</h1>
+
+  <% if @included %>
+    <% if @english_word %>
+        <p> <%= @word %> is a word!!!</p>
+      <% else %>
+        <%="not an english" %>
+      <% end %>
+    <% else %>
+      <p> <%= @word %> "its not in the grid"</p>
+  <% end %>
+
+
+<%= link_to "Play Again", new_path %>
